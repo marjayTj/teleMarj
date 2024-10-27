@@ -23,7 +23,7 @@ const io = socketio(expressServer,{
         'https://localhost:3001',
         'https://localhost:3002',
         'https://www.dicp.online', 
-        // 'http://www.dicp.online', TEST ONLU
+        // 'http://www.dicp.online', TEST ONLY
     ]
 })
 
