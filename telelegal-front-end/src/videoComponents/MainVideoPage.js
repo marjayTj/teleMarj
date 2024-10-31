@@ -113,7 +113,7 @@ const MainVideoPage = ()=>{
         const token = searchParams.get('token');
         console.log(token)
         const fetchDecodedToken = async()=>{
-            const resp = await axios.post('https://localhost:9000/validate-link',{token});
+            const resp = await axios.post('https://api.dicp.online/validate-link',{token});
             console.log(resp.data);
             setApptInfo(resp.data)
             uuidRef.current = resp.data.uuid;
