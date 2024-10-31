@@ -55,5 +55,5 @@ app.get('/pro-link',(req, res)=>{
         proId: 1234,
     }
     const token = jwt.sign(userData,linkSecret);
-    res.send(`<a href="https://dicp.online/dashboard?token=${token}" target="_blank">Link Here</a>`);
+    res.send(`<a href="https://dicp.online/dashboard?token=${token}" target="_blank">Link Here Tama</a>`);
 })
