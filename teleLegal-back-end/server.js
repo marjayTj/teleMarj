@@ -19,10 +19,7 @@ app.use(express.json()); //this will allow us to parse json in the body with the
 const expressServer = http.createServer({}, app);
 const io = socketio(expressServer,{
     cors: [
-        'https://www.dicp.online',
-        'https://localhost:3000',
-        'https://localhost:3001',
-        'https://localhost:3002',
+        'https://www.dicp.online'
         // 'http://www.dicp.online', TEST ONLY
     ]
 })
